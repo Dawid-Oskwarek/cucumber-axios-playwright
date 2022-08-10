@@ -1,7 +1,7 @@
 name: Cucumber Tests
 on:
   pull_request:
-# jobs:
+jobs:
 #   playwright-test:
 #     runs-on: ubuntu-latest
 #     steps:
