@@ -1,0 +1,18 @@
+{
+  "name": "cucumber",
+  "version": "1.0.0",
+  "description": "Sample test framework using cucumber, axios and playwright",
+  "main": "N/A",
+  "scripts": {},
+  "keywords": [],
+  "author": "Dawid Oskwarek",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.24.2",
+    "@cucumber/cucumber": "^8.5.1",
+    "axios": "^0.27.2",
+    "chai": "4.3.4",
+    "dotenv": "^10.0.0",
+    "faker": "^5.5.3"
+    }
+}
