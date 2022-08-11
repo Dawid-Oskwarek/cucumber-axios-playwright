@@ -1,8 +1,6 @@
-const axios = require('axios');
+const axios = require('./axios-config.js');
 require('dotenv').config();
-const config = require('./axios-config');
 
-config.axiosConfig();
 const url = process.env.BASEURL;
 
 module.exports = {

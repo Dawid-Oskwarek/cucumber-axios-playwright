@@ -27,6 +27,8 @@ jobs:
       run: npm ci
     - name: Run API tests
       run: npx cucumber-js tests/api/features
+      env:
+        BASEURL: ${{ secrets.BASEURL }}
     - uses: actions/upload-artifact@v2
       if: always()
       with:
