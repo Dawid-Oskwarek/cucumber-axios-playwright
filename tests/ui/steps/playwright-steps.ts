@@ -5,8 +5,8 @@ import { isSuccessMessageVisible } from '../support/pages/SuccessPage';
 import { expect } from '@playwright/test';
 
 Given('I access the website', async function () {
-    const url = process.env.UI_URL;
-    await page.goto(url);
+    //const url = process.env.UI_URL;
+    await page.goto('https://ultimateqa.com/simple-html-elements-for-automation/');
 });
 
 When('I click on class button', async function () {
