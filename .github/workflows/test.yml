@@ -13,9 +13,7 @@ jobs:
         npx playwright install --with-deps chromium
     - name: Run UI Tests
       shell: bash
-      run: npx cucumber-js tests/ui/features --parallel 3 --tags "@ui" --config tests/ui/cucumber.js --retry 2
-#      env:
-#        UI_URL: ${{ secrets.UI_URL }}
+      run: npx cucumber-js tests/ui/features --parallel 3 --tags "@ui" --config tests/ui/cucumber.js --retry 1
     - uses: actions/upload-artifact@v2
       if: always()
       with:
