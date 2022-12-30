@@ -11,7 +11,7 @@ jobs:
       run: |
         npm ci
         npx playwright install --with-deps chromium
-    - name: Run Api Tests
+    - name: Run UI Tests
       shell: bash
       run: npx cucumber-js tests/ui/features --parallel 3 --tags "@ui" --config tests/ui/cucumber.js --retry 2
     - uses: actions/upload-artifact@v2

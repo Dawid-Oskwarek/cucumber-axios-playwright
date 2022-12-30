@@ -2,9 +2,7 @@ import { Given, When, Then, Before } from '@cucumber/cucumber';
 import { page } from '../support/hooks';
 import { clickButton } from '../support/pages/HtmlElementsPage';
 import { isSuccessMessageVisible } from '../support/pages/SuccessPage';
-
-import { expect } from '@playwright/test'
-import { expect as expectChai } from 'chai'
+import { expect } from '@playwright/test';
 
 Given('I access the website', async function () {
     const url = process.env.UI_URL;
