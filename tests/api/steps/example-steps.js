@@ -18,11 +18,10 @@ When('I send a POST request', async function() {
 
 When('I send a POST request using API Client', async function() {
     const client = new AxiosApiClient(url);
-    client.setJsonBody(this.requestBody);
-    this.response = client.post('/api/users');
+    this.response = await client.post('/api/users', this.requestBody);
 });
 
 Then('the response is valid', function() {
-    expect(this.response.data.name, 'Name does not match').to.equal('morpheus');
-    expect(this.response.data.job, 'Job does not match').to.equal('leader');
+    expect(this.response.data.name || this.response.data.data.name, 'Name does not match').to.equal('morpheus');
+    expect(this.response.data.job || this.response.data.data.job, 'Job does not match').to.equal('leader');
 });
