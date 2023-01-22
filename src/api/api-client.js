@@ -36,7 +36,7 @@ class AxiosApiClient {
 
     async post(path) {
         console.log(`\nMaking POST API Call: ${path}`);
-        return this.client.post(path).then((res) => res).catch((err) => err);
+        return this.client.post(path);
     }
 
     async put(path) {
