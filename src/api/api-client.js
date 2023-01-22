@@ -31,22 +31,22 @@ class AxiosApiClient {
 
     async get(path, params) {
         console.log(`\nMaking GET API Call: ${path}`);
-        return this.client.get(path, { params }).then((res) => res).catch((err) => err);;
+        return this.client.get(path, { params }).then((res) => res).catch((err) => err);
     }
 
     async post(path) {
         console.log(`\nMaking POST API Call: ${path}`);
-        return this.client.post(path).then((res) => res).catch((err) => err);;
+        return this.client.post(path).then((res) => res).catch((err) => err);
     }
 
     async put(path) {
         console.log(`\nMaking PUT API Call: ${path}`);
-        return this.client.put(path).then((res) => res).catch((err) => err);;
+        return this.client.put(path).then((res) => res).catch((err) => err);
     }
 
     async delete(path) {
         console.log(`\nMaking DELETE API Call: ${path}`);
-        return this.client.delete(path).then((res) => res).catch((err) => err);;
+        return this.client.delete(path).then((res) => res).catch((err) => err);
     }
 }
 
