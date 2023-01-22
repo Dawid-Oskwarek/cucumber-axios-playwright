@@ -1,7 +1,7 @@
 const axios = require('axios').default;
 
-
 axios.defaults.headers.common['Content-Type'] = 'application/json';
+
 axios.interceptors.request.use(request => {
     if (request.data !== undefined) {
         console.log('Request Body: \n' + JSON.stringify(request.data));
