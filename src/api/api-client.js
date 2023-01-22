@@ -49,3 +49,5 @@ class AxiosApiClient {
         return this.client.delete(path).then((res) => res).catch((err) => err);;
     }
 }
+
+module.exports = AxiosApiClient;
