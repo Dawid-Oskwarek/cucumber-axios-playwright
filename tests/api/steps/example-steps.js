@@ -19,7 +19,7 @@ When('I send a POST request', async function() {
 When('I send a POST request using API Client', async function() {
     const client = new AxiosApiClient(url);
     client.setJsonBody(this.requestBody);
-    client.post('/api/users');
+    this.response = client.post('/api/users');
 });
 
 Then('the response is valid', function() {
